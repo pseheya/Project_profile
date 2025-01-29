@@ -6,8 +6,8 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-800 via-grey-200 to-gray-800 p-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="bg-[#172121] text-white py-4 p-3">
+      <div className="max-w-7xl mx-auto flex justify-between items-center ">
         <a href="/" className="text-white text-xl font-mono">
           Portfolio Web
         </a>
@@ -37,19 +37,19 @@ function Header() {
         <div className="hidden lg:flex space-x-4">
           <a
             href="/"
-            className="text-white hover:bg-black px-3 py-2 rounded font-mono"
+            className="text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
           >
             Main Page
           </a>
           <a
             href="/about_me"
-            className="text-white hover:bg-black px-3 py-2 rounded font-mono"
+            className="text-white hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
           >
             About
           </a>
           <a
             href="/projects"
-            className="text-white hover:bg-black px-3 py-2 rounded font-mono"
+            className="text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
           >
             Projects
           </a>
@@ -57,7 +57,7 @@ function Header() {
           <a
             href="/contact_information"
             target="_blank"
-            className="text-white hover:bg-black  px-3 py-2 rounded font-mono"
+            className="text-white hover:bg-white hover:text-black  px-3 py-2 rounded font-mono"
           >
             Contact me
           </a>
@@ -66,19 +66,19 @@ function Header() {
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} mt-4`}>
         <a
           href="/about_me"
-          className="block text-white hover:bg-black px-3 py-2 rounded font-mono"
+          className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
           About
         </a>
         <a
           href="/projects"
-          className="block text-white hover:bg-black px-3 py-2 rounded font-mono"
+          className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
           Projects
         </a>
         <a
           href="/contact_information"
-          className="block text-white hover:bg-black  px-3 py-2 rounded font-mono"
+          className="block text-white  hover:bg-white hover:text-black  px-3 py-2 rounded font-mono"
         >
           Contact me
         </a>
