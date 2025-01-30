@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -8,29 +8,18 @@ function Footer() {
 
         <div className="flex gap-4 mt-3 md:mt-0">
           <a
-            href="https://www.facebook.com/people/Oksana-Herasymenko/pfbid0Bk13XxbsNU5WX1gHfU2FqVdRieQnvkfEgVy4gSToxSY1LLEAFfwybXwhbwEXv777l/"
-            target="_blank"
-            className="text-gray-400 hover:text-white transition"
-          >
-            <FaFacebook size={25} />
-          </a>
-          <a
             href="https://github.com/pseheya"
             target="_blank"
+            aria-label="github link"
             className="text-gray-400 hover:text-white transition"
           >
             <FaGithub size={25} />
           </a>
-          <a
-            href="https://www.instagram.com/moksiislol/"
-            target="_blank"
-            className="text-gray-400 hover:text-white transition"
-          >
-            <FaInstagram size={25} />
-          </a>
+
           <a
             href="https://www.linkedin.com/in/oksana-herasymenko-4603542a9/"
             target="_blank"
+            aria-label="link to linkedin"
             className="text-gray-400 hover:text-white transition"
           >
             <FaLinkedin size={25} />

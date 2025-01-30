@@ -7,6 +7,7 @@ function MainSection() {
           autoPlay
           loop
           muted
+          playsInline
         >
           <source src="assets/backgroundVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -34,7 +35,7 @@ function MainSection() {
           <h2 className="text-3xl font-semibold text-[#8A4C3A] mb-6 font-mono">
             Get into tech: My Journey
           </h2>
-          <div className="relative flex items-center justify-around p-2 bg-white rounded-xl max-w-xl mx-auto sm:max-w-2xl">
+          <div className="relative flex flex-col md:flex-row  items-center justify-around p-2 bg-white rounded-xl max-w-xl mx-auto sm:max-w-2xl">
             <div className="flex items-center gap-6">
               <img
                 src="assets/avatar.jpg"
@@ -91,7 +92,7 @@ function MainSection() {
 
           <div className="max-w-7xl mx-auto flex justify-around items-center">
             <a
-              href="/contact_information"
+              href="/contact"
               className="border-2 border-gray-700 text-black px-6 py-3 rounded-full text-m font-mono"
             >
               Contact me

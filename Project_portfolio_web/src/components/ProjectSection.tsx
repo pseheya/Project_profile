@@ -186,7 +186,7 @@ function ProjectSection() {
             name: "Render",
             icon: (
               <img
-                src="https://th.bing.com/th/id/OIP.alnyhQ6EKBI1eH03utWNkwHaCD?rs=1&pid=ImgDetMain"
+                src="https://th.bing.com/th/id/R.90989354a7fd9dc0ea18cf8eae72814a?rik=dXJHl7drKcSKtQ&pid=ImgRaw&r=0"
                 alt="render icon"
                 width={25}
               />
@@ -416,7 +416,7 @@ function ProjectSection() {
             name: "Render",
             icon: (
               <img
-                src="https://th.bing.com/th/id/OIP.alnyhQ6EKBI1eH03utWNkwHaCD?rs=1&pid=ImgDetMain"
+                src="https://th.bing.com/th/id/R.90989354a7fd9dc0ea18cf8eae72814a?rik=dXJHl7drKcSKtQ&pid=ImgRaw&r=0"
                 alt="render icon"
                 width={25}
               />

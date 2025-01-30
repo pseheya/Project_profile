@@ -12,9 +12,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainSection />} />
-        <Route path="/contact_information" element={<ContactInformation />} />
+        <Route path="/contact" element={<ContactInformation />} />
         <Route path="/projects" element={<ProjectSection />} />
-        <Route path="about_me" element={<AboutMe />} />
+        <Route path="about" element={<AboutMe />} />
       </Routes>
       <Footer />
     </div>
