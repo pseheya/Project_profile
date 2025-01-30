@@ -4,12 +4,12 @@ function MainSection() {
       <section className="relative h-screen text-center">
         <video
           src="assets/backgroundVideo.mp4"
-          className="  absolute inset-0 w-full h-full object-cover brightness-40 "
-          autoPlay={true}
+          className="absolute inset-0 w-full h-full object-cover brightness-40 "
+          autoPlay
           loop
           muted
+          playsInline
         >
-          {/* <source src="assets/backgroundVideo.mp4" type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
 
