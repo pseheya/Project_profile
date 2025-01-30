@@ -213,7 +213,8 @@ function ProjectSection() {
     {
       name: "NC News",
       description:
-        "A news aggregation platform that allows users to read and comment on articles.",
+        "NC News is a news platform with interactive features that allow users to log in, read, like, and comment on articles. Users can also delete their comments if needed.",
+
       fullDescription: (
         <>
           <p className="mt-4 text-gray-800">
