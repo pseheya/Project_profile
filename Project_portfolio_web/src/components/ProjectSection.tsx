@@ -443,12 +443,13 @@ function ProjectSection() {
                 <p>{project.name}</p>
               </h3>
               <video
+                src={project.videoSrc}
                 className="flex justify-center items-center w-full mt-3 rounded-md brightness-80"
                 autoPlay
                 loop
                 muted
+                playsInline
               >
-                <source src={project.videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               <p className="sm-w-screen mt-5 line-clamp-3 text-sm/6 text-gray-600 ">
