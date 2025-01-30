@@ -65,6 +65,12 @@ function Header() {
       </div>
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} mt-4`}>
         <a
+          href="/"
+          className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
+        >
+          Main Page
+        </a>
+        <a
           href="/about_me"
           className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
