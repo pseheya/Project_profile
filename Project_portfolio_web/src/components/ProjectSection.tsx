@@ -47,12 +47,13 @@ function ProjectSection() {
           </div>
 
           <video
+            src="assets/fivebadgerecord.mp4"
             className="flex justify-center items-center w-full mt-3 rounded-md brightness-80"
             autoPlay
             loop
             muted
+            playsInline
           >
-            <source src="assets/fivebadgerecord.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -250,15 +251,13 @@ function ProjectSection() {
           </div>
 
           <video
+            src="assets/nc_news_pagination_and_comments.mp4"
             className="flex justify-center items-center w-full mt-3 rounded-md brightness-80"
             autoPlay
             loop
             muted
+            playsInline
           >
-            <source
-              src="assets/nc_news_pagination_and_comments.mp4"
-              type="video/mp4"
-            />
             Your browser does not support the video tag.
           </video>
 
