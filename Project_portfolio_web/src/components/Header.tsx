@@ -56,7 +56,6 @@ function Header() {
 
           <a
             href="/contact"
-            target="_blank"
             className="text-white hover:bg-white hover:text-black  px-3 py-2 rounded font-mono"
           >
             Contact me
