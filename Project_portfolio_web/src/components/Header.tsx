@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +9,9 @@ function Header() {
   return (
     <nav className="bg-[#172121] text-white py-4 p-3">
       <div className="max-w-7xl mx-auto flex justify-between items-center ">
-        <a href="/" className="text-white text-xl font-mono">
+        <Link to="/" className="text-white text-xl font-mono">
           Portfolio Web
-        </a>
+        </Link>
 
         <div className="lg:hidden">
           <button
@@ -63,30 +64,30 @@ function Header() {
         </div>
       </div>
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} mt-4`}>
-        <a
-          href="/"
+        <Link
+          to="/"
           className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
           Main Page
-        </a>
-        <a
-          href="/about"
+        </Link>
+        <Link
+          to="/about"
           className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
           About
-        </a>
-        <a
-          href="/projects"
+        </Link>
+        <Link
+          to="/projects"
           className="block text-white  hover:bg-white hover:text-black px-3 py-2 rounded font-mono"
         >
           Projects
-        </a>
-        <a
-          href="/contact"
+        </Link>
+        <Link
+          to="/contact"
           className="block text-white  hover:bg-white hover:text-black  px-3 py-2 rounded font-mono"
         >
           Contact me
-        </a>
+        </Link>
       </div>
     </nav>
   );

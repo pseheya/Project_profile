@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MainSection() {
   return (
     <>
@@ -91,18 +93,18 @@ function MainSection() {
           </p>
 
           <div className="max-w-7xl mx-auto flex justify-around items-center">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="border-2 border-gray-700 text-black px-6 py-3 rounded-full text-m font-mono"
             >
               Contact me
-            </a>
-            <a
-              href="/projects"
+            </Link>
+            <Link
+              to="/projects"
               className="border-2 border-gray-700 text-black px-6 py-3 rounded-full text-m font-mono"
             >
               Projects
-            </a>
+            </Link>
           </div>
         </div>
       </section>
