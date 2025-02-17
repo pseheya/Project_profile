@@ -21,7 +21,7 @@ function MainSection() {
               Welcome to my Portfolio Page!
             </h1>
             <p className="text-lg mb-6 text-white font-mono">
-              Let me talk about my jorney in tech!
+              Let me talk about my journey in tech!
             </p>
             <a
               href="#about"
