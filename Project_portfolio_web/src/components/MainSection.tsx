@@ -1,16 +1,29 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function MainSection() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+
   return (
     <>
       <section className="relative h-screen text-center">
+        {/* Video Background */}
+        {!videoLoaded && !videoError && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black"></div>
+        )}
+
         <video
           src="assets/backgroundVideo.mp4"
-          className="absolute inset-0 w-full h-full object-cover brightness-40 "
+          className={`absolute inset-0 w-full h-full object-cover brightness-40 transition-opacity duration-500 ${
+            videoLoaded ? "opacity-100" : "opacity-0"
+          }`}
           autoPlay
           loop
           muted
           playsInline
+          onLoadedData={() => setVideoLoaded(true)}
+          onError={() => setVideoError(true)}
         >
           Your browser does not support the video tag.
         </video>
@@ -25,7 +38,13 @@ function MainSection() {
             </p>
             <a
               href="#about"
-              className="bg-[#172121] text-white px-6 py-3 rounded-full text-lg font-mono"
+              className="bg-[#172121] text-white px-6 py-3 rounded-full text-lg font-mono "
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Learn More
             </a>
