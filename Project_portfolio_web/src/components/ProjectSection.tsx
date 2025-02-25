@@ -1,7 +1,8 @@
 import { useState } from "react";
-import ProjectModal from "./ProjectPopOutModal";
+
 import { Project } from "./types/types";
 import { FaReact, FaNodeJs } from "react-icons/fa";
+import { ProjectModal } from "./ProjectPopOutModal";
 
 function ProjectSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -444,6 +445,7 @@ function ProjectSection() {
                 <p>{project.name}</p>
               </h3>
               <video
+                aria-label={project.name + "project video."}
                 src={project.videoSrc}
                 className="flex justify-center items-center w-full mt-3 rounded-md brightness-80"
                 autoPlay

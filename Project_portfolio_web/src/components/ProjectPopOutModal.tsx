@@ -5,12 +5,24 @@ interface ProjectModalProps {
   closeModal: () => void;
 }
 
-function ProjectModal({ project, closeModal }: ProjectModalProps) {
+export function ProjectModal({ project, closeModal }: ProjectModalProps) {
   if (!project) return null;
 
+  const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
-    <div className=" fixed inset-0 bg-gray-800/50 flex justify-center items-center flex-grow">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-xl max-h-[90vh] overflow-y-auto">
+    <div
+      className="fixed inset-0 bg-gray-800/50 flex justify-center items-center"
+      onClick={handleOutsideClick}
+    >
+      <div
+        className="bg-white p-6 rounded-lg shadow-lg max-w-xl max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         <h2 className="text-xl font-bold font-mono">{project.name}</h2>
         <p className="mt-2 text-gray-700 font-mono">{project.description}</p>
 
@@ -67,5 +79,3 @@ function ProjectModal({ project, closeModal }: ProjectModalProps) {
     </div>
   );
 }
-
-export default ProjectModal;
